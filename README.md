@@ -19,7 +19,7 @@ font cache must be updated
 
     sudo fc-cache -f -v
 
-## References
+## Acknowledgments
 
 This code is based on the work of Nicolas Favre-Felix (
 n-dot-favrefelix-at-gmail-com ).
