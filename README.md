@@ -1,6 +1,7 @@
 # Curriculum Vitae
 
-
+This is my CV. Forking and using this code is fine, as long as noone tries to
+impersonate me!
 
 
 ## Dependencies
