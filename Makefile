@@ -1,10 +1,11 @@
 TEXFILES=main.tex lib/preamble.tex
+IMAGES=img/foto.jpg
 OUTPUT_FILENAME=render/JorgeAzevedoCV
 TARGET=$(OUTPUT_FILENAME).pdf
 
 all: $(TARGET)
 
-$(TARGET): $(TEXFILES)
+$(TARGET): $(TEXFILES) $(IMAGES)
 	xelatex -jobname=$(OUTPUT_FILENAME) $<
 
 show: $(TARGET)
