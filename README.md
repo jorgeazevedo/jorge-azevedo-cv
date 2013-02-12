@@ -13,11 +13,15 @@ live package
 
     sudo apt-get install texlive-full
 
-This document also requires Adobe Garamond Pro to be installed. Fonts are
-installed normally in the usual fashion. However, for xetex to see them the
-font cache must be updated
+This document also requires Adobe Garamond Pro (regular and semibold)  to be
+installed. Fonts are installed normally in the usual fashion. However, for
+xetex to see them the font cache must be updated
 
     sudo fc-cache -f -v
+
+And you can check the available fonts by running
+
+    fc-list
 
 ## Acknowledgments
 

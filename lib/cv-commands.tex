@@ -1,65 +1,41 @@
-% Set of commands used by cv.tex
-
-\usepackage[dvipsnames,usenames]{color}
+% Set Margins
 \usepackage{lib/simplemargins}
-\usepackage{graphicx}
 \setleftmargin{1.5cm}
 \setrightmargin{2cm}
 \settopmargin{1.0cm}
 \setbottommargin{0cm}
 
-% starting commands
+% Set paragraph indent to 2.2mm, even first
+\usepackage{indentfirst}
+\setlength{\parindent}{2.2mm}
 
-\newcommand{\largeskip}[0]{\vspace{2.5mm}\\}
-\newcommand{\shortskip}[0]{\vspace{0.4mm}\\}
+% Image support
+\usepackage{graphicx}
 
-% small caps
-\newcommand{\smcp}[1]{{\font\1="Adobe Garamond Pro:+smcp" at 11pt \1{#1}}}
-\renewcommand{\textsc}[1]{\smcp{#1}}
+% Font Configuration
 
-\newcommand{\header}[3]{
-\hspace{0cm}
-\begin{tabular}{p{11cm}p{6cm}}
-{\raggedright {\headline {#1}}
-\\\vspace*{2mm}
-\headline{#2}} 
-& 
-\raggedleft{#3}
-\end{tabular}}
+% Set font
+\usepackage{fontspec}
+\setmainfont[Numbers=OldStyle,
+	     Scale=1.05,
+	     ItalicFont={Adobe Garamond Pro Italic},
+             BoldFont={Adobe Garamond Pro Semibold}
+            ]{Adobe Garamond Pro}
 
+% Set section to MidnightBlue with horizontal rule
+\usepackage[dvipsnames,usenames]{color}
+\usepackage[explicit]{titlesec}
+\titleformat{\section}[display]{\Large\color{MidnightBlue}}{\thetitle}{1em}{#1}[{\titlerule}]
 
-\newcommand{\blocktitle}[1]{
-\parbox{\textwidth}{
-	\vspace{2mm}
-	\noindent
-	\textcolor{MidnightBlue}{
-{\font\1="Adobe Garamond Pro" at 16pt \1{#1}
-	\vspace*{1mm}
-	\hrule}
-	\vspace*{3mm}
-	\noindent
-} } }
+% Text formating
 
+\newcommand{\standardEntry}[2]
+{
+	\vspace{0.4\baselineskip}
+	\begin{minipage}[t]{0.25\textwidth} \textsc{#1} \end{minipage}
+	\begin{minipage}[t]{0.65\textwidth} #2 \end{minipage}
+}
+
+\newcommand{\verticalSkip}[0]{\vspace{2.5mm}}
+% TODO: I'm not sure I like this. Maybe a Large would be sufficient?
 \newcommand{\headline}[1]{ {\font\1="Adobe Garamond Pro" at 20pt \1{#1}}}
-\newcommand{\setmainfont}[0]{\font\x="Adobe Garamond Pro" at 12pt \x}
-
-%%%%%%
-
-\newenvironment{resumeblock}[1]
-{\blocktitle{#1}\begin{tabular}{p{4cm}p{13cm}}}
-{\end{tabular}}
-\newcommand{\resumeitem}[2]{\noindent\raggedright{\textsc{#1}} & #2}
-
-%%%%%%
-
-\newcommand{\interest}[1]{
-~\raisebox{1mm}{#1}}
-
-%%%%%%
-
-\newenvironment{interestsblock}[1]
-{\blocktitle{#1}\begin{tabular}{p{10cm}p{10cm}}}
-{\end{tabular}}
-
-\setlength{\parindent}{0mm}
-\pagestyle{empty}
