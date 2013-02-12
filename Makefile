@@ -1,4 +1,4 @@
-TEXFILES=main.tex lib/cv-commands.tex lib/simplemargins.sty
+TEXFILES=main.tex lib/cv-commands.tex
 OUTPUT_FILENAME=render/JorgeAzevedoCV
 TARGET=$(OUTPUT_FILENAME).pdf
 
