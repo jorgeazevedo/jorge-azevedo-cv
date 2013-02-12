@@ -1,4 +1,4 @@
-TEXFILES=main.tex lib/cv-commands.tex
+TEXFILES=main.tex lib/preamble.tex
 OUTPUT_FILENAME=render/JorgeAzevedoCV
 TARGET=$(OUTPUT_FILENAME).pdf
 
