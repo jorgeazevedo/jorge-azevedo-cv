@@ -43,6 +43,16 @@
 	\begin{minipage}[t]{0.65\textwidth} #2 \end{minipage}
 }
 
+\newcommand{\stretchedEntry}[2]
+{
+	\standardEntry{#1}{#2}
+}
+
+\newcommand{\indentedEntry}[2]
+{
+	\standardEntry{#1}{#2}
+}
+
 \newcommand{\verticalSkip}[0]{\vspace{2.5mm}}
 % TODO: I'm not sure I like this. Maybe a Large would be sufficient?
 \newcommand{\headline}[1]{ {\font\1="Adobe Garamond Pro" at 20pt \1{#1}}}
