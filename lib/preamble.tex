@@ -57,8 +57,5 @@
 
 \newcommand{\indentedEntry}[2]
 {
-	\vspace{0.4\baselineskip}
-	\begin{minipage}[t]{0.25\textwidth} \hspace{0.125\textwidth} {\small \textsc{#1}} \end{minipage}
-	\begin{minipage}[t]{0.65\textwidth} #2 \end{minipage}
-	\par
+	\standardEntry{\hspace{0.125\textwidth} #1}{#2}
 }
