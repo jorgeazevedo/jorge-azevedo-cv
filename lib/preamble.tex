@@ -51,14 +51,16 @@
 {
 	\vspace{0.4\baselineskip}
 	#1 \hfill #2
-	\vspace{\baselineskip} \\ 
+	\vspace{\baselineskip}
+	\par
 }
 
 \newcommand{\indentedEntry}[2]
 {
 	\vspace{0.4\baselineskip}
-	\hspace{1cm}\begin{minipage}[t]{0.2\textwidth} {\small \textsc{#1}} \end{minipage}
-	\begin{minipage}[t]{0.65\textwidth} #2 \end{minipage} \\
+	\begin{minipage}[t]{0.25\textwidth} \hspace{0.125\textwidth} {\small \textsc{#1}} \end{minipage}
+	\begin{minipage}[t]{0.65\textwidth} #2 \end{minipage}
+	\par
 }
 
 \newcommand{\verticalSkip}[0]{\vspace{2.5mm}}
