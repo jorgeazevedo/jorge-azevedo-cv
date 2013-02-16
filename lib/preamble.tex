@@ -1,6 +1,6 @@
 \documentclass[a4paper,12pt]{article}
 
-% Need center dot
+% Need \centerdot
 \usepackage{amssymb}
 
 % Set margins
@@ -16,9 +16,7 @@
 % Image support
 \usepackage{graphicx}
 
-% Font Configuration
-
-% Set font
+% Set font to Garamond
 \usepackage{fontspec}
 \setmainfont[Numbers=OldStyle,
 	     Scale=1.05,
@@ -31,8 +29,7 @@
 \usepackage[explicit]{titlesec}
 \titleformat{\section}[display]{\Large\color{MidnightBlue}}{\thetitle}{1em}{#1}[{\titlerule}]
 
-% Text formating
-
+% Text layout commands
 \newcommand{\topSection}[2]
 {
 	\begin{minipage}[b]{0.64\textwidth} #1 \end{minipage}
