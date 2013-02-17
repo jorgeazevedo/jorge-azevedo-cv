@@ -1,5 +1,5 @@
 TEXFILES=main.tex lib/preamble.tex
-IMAGES=img/foto.jpg
+IMAGES=img/photo.jpg
 OUTPUT_FILENAME=render/JorgeAzevedoCV
 TARGET=$(OUTPUT_FILENAME).pdf
 
