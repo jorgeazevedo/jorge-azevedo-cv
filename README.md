@@ -23,6 +23,10 @@ And you can check the available fonts by running
 
     fc-list
 
+Spellchecking requires `aspell`
+
+    sudo apt-get install aspell
+
 ## Acknowledgments
 
 This code is based on the work of Nicolas Favre-Felix (

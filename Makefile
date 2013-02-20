@@ -11,6 +11,9 @@ $(TARGET): $(TEXFILES) $(IMAGES)
 show: $(TARGET)
 	gnome-open $(TARGET)
 
+spellcheck:
+	aspell -t check main.tex
+
 clean:
 	rm -f render/*.log render/*.aux lib/*.aux
 cleanall: clean
