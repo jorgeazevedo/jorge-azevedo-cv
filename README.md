@@ -31,4 +31,4 @@ Spellchecking requires `aspell`
 ## Acknowledgments
 
 This code is based on the work of Nicolas Favre-Felix (
-n-dot-favrefelix-at-gmail-com ).
+n-dot-favrefelix-at-gmail-com ) and Andrew Bramption (http://github.com/bramp/curriculum-vitae).
