@@ -1,7 +1,7 @@
 # Curriculum Vitae
 
 [This is my
-CV](https://github.com/jorgeazevedo/jorge-azevedo-cv/blob/master/render/JorgeAzevedoCV.pdf?raw=true).
+CV](https://github.com/jorgeazevedo/jorge-azevedo-cv/blob/mobile/render/JorgeAzevedoCV.pdf?raw=true).
 Forking and using this code is fine, as long as noone tries to impersonate me!
 
 
